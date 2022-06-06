@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokedex</h1>
+      <div class="container-geracao">
+        <button class="btng geracao1" onclick="fetchPokemonX(1,151)">
+          1ºGeração
+        </button>
+        <button class="btng geracao2" onclick="fetchPokemonX(152,251)">
+          2ºGeração
+        </button>
+        <button class="btng geracao3" onclick="fetchPokemonX(252,386)">
+          3ºGeração
+        </button>
+        <button class="btng geracao4" onclick="fetchPokemonX(387,494)">
+          4ºGeração
+        </button>
+        <button class="btng geracao5" onclick="fetchPokemonX(495,649)">
+          5ºGeração
+        </button>
+        <button class="btng geracao6" onclick="fetchPokemonX(650,721)">
+          6ºGeração
+        </button>
+        <button class="btng geracao7" onclick="fetchPokemonX(722,809)">
+          7ºGeração
+        </button>
+        <button class="btng geracao8" onclick="fetchPokemonX(810,898)">
+          8ºGeração
+        </button>
+      </div>
+      <div id="myteam">
+        <button class="btng myteam" onclick="fetchPokemonMyTeam()">
+          My team
+        </button>
+      </div>
+      <ul data-js="pokedex" class="pokedex"></ul>
+      <div id="showmore">
+        <button class="btng showmore" onclick="fetchPokemonMore()">
+          Mais Pokemons
+        </button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
